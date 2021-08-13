@@ -4,9 +4,9 @@ const plugins = [
   require('postcss-simple-vars'),
   require('postcss-nested'),
   require('postcss-hexrgba'),
-];
+]
 
 module.exports = (opts = {}) => {
   // TODO -- pass along plugins
-  return plugins;
-};
+  return plugins
+}
