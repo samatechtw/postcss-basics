@@ -1,6 +1,6 @@
 {
   "name": "@samatech/postcss-basics",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Simple opinionated PostCSS plugin pack.",
   "keywords": [
     "postcss",

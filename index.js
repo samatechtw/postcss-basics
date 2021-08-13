@@ -3,7 +3,7 @@ const plugins = [
   require('postcss-mixins'),
   require('postcss-simple-vars'),
   require('postcss-nested'),
-  require('postcss-hexrgba'),
+  require('@samatech/postcss-colors'),
 ]
 
 module.exports = (opts = {}) => {

@@ -9,7 +9,7 @@ Plugins:
 - [`postcss-mixins`](https://github.com/postcss/postcss-mixins)
 - [`postcss-nested`](https://github.com/postcss/postcss-nested)
 - [`postcss-simple-vars`](https://github.com/postcss/postcss-simple-vars)
-- [`postcss-hexrgba`](https://gibhub.com/hudochenkov/postcss-hexrgba#migrate-to-postcss-8) - PostCSS8 compatible version
+- [`@samatech/postcss-colors`](https://github.com/samatechtw/postcss-colors)
 
 ## Usage
 
