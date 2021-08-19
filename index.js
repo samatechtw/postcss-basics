@@ -3,10 +3,10 @@ const plugins = [
   require('postcss-mixins'),
   require('postcss-simple-vars'),
   require('postcss-nested'),
-  require('@samatech/postcss-colors'),
+  require('@samatech/postcss-colors')(),
 ]
 
 module.exports = (opts = {}) => {
-  // TODO -- pass along plugins
+  // TODO -- pass along plugin options
   return plugins
 }

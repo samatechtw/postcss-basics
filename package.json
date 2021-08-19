@@ -1,6 +1,6 @@
 {
   "name": "@samatech/postcss-basics",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Simple opinionated PostCSS plugin pack.",
   "keywords": [
     "postcss",
@@ -16,17 +16,18 @@
   },
   "scripts": {
     "lint": "eslint --ext .js index.js",
-    "format": "eslint --fix --ext .js index.js"
+    "format": "eslint --fix --ext .js index.js",
+    "test": "jest"
   },
   "peerDependencies": {
     "postcss": "^8.3.6"
   },
   "dependencies": {
+    "@samatech/postcss-colors": "^0.2.0",
     "autoprefixer": "^10.3.1",
     "postcss-mixins": "^8.1.0",
     "postcss-nested": "^5.0.6",
-    "postcss-simple-vars": "^6.0.3",
-    "@samatech/postcss-colors": "^0.2.0"
+    "postcss-simple-vars": "^6.0.3"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
@@ -36,14 +37,21 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettierx": "^0.18.0",
     "eslint-plugin-promise": "^5.1.0",
+    "jest": "^27.0.6",
     "postcss": "^8.3.6"
   },
   "eslintConfig": {
     "env": {
       "jest/globals": true
     },
-    "plugins": ["jest", "prettierx"],
-    "extends": ["eslint-config-standard", "plugin:prettierx/standardize"]
+    "plugins": [
+      "jest",
+      "prettierx"
+    ],
+    "extends": [
+      "eslint-config-standard",
+      "plugin:prettierx/standardize"
+    ]
   },
   "jest": {
     "testEnvironment": "node",
