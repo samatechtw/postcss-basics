@@ -25,20 +25,22 @@ or `postcss` in bundle config.
 
 If you do not use PostCSS, first add it according to [PostCSS docs].
 
-**Step 3:** Add the plugin to plugins list (note the spread operator and the extra `()` after the `require` statement):
+**Step 3:** Add the plugin to plugins list (note the spread operator and the extra `()` after the `import` statement):
 
 ```javascript
-module.exports = {
+import postcssBasics from '@samatech/postcss-basics'
+export default {
   plugins: [
-    ...require('@samatech/postcss-basics')(),
+    ...postcssBasics(),
   ],
 };
 ```
 
 This can be simplified if you are not using other plugins:
 ```javascript
-module.exports = {
-  plugins: require('@samatech/postcss-basics')(),
+import postcssBasics from '@samatech/postcss-basics'
+export default {
+  plugins: postcssBasics(),
 };
 ```
 
@@ -56,5 +58,6 @@ module.exports = {
 Call plugin function to set options:
 
 ```js
-    require('@samatech/postcss-basics')()
+import postcssBasics from '@samatech/postcss-basics'
+postcssBasics()
 ```
