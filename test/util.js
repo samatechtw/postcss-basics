@@ -1,7 +1,7 @@
 import postcss from 'postcss'
 import { expect } from 'vitest'
 
-import plugin from '../'
+import plugin from '../lib'
 
 export function runError(input, error) {
   const result = postcss([...plugin()]).process(input, { from: '/test.css' })

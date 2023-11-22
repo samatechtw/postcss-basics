@@ -1,6 +1,6 @@
 {
   "name": "@samatech/postcss-basics",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Simple opinionated PostCSS plugin pack.",
   "keywords": [
     "postcss",
@@ -8,7 +8,19 @@
     "postcss-plugin",
     "pack"
   ],
-  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "types": "dist/index.d.mts",
+  "files": [
+    "lib",
+    "dist"
+  ],
   "author": "SamaTech <samatechtw@gmail.com>",
   "license": "MIT",
   "repository": "samatechtw/postcss-basics",
@@ -16,6 +28,7 @@
     "node": ">=12.0"
   },
   "scripts": {
+    "build": "rm -rf dist/* && tsup lib/index.ts --dts --format esm,cjs",
     "lint": "eslint --ext .js index.js",
     "format": "eslint --fix --ext .js index.js",
     "test": "vitest run"
@@ -40,6 +53,8 @@
     "eslint-plugin-promise": "^6.1.1",
     "postcss": "^8.4.31",
     "prettier": "^3.1.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2",
     "vitest": "^0.34.6"
   },
   "eslintConfig": {
