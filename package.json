@@ -1,6 +1,6 @@
 {
   "name": "@samatech/postcss-basics",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "Simple opinionated PostCSS plugin pack.",
   "keywords": [
     "postcss",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": "samatechtw/postcss-basics",
   "engines": {
-    "node": ">=12.0"
+    "node": ">=18.0"
   },
   "scripts": {
     "build": "rm -rf dist/* && tsup lib/index.ts --dts --format esm,cjs",
@@ -37,7 +37,7 @@
     "postcss": "^8.3.6"
   },
   "dependencies": {
-    "@samatech/postcss-colors": "^0.5.1",
+    "@samatech/postcss-colors": "^0.5.2",
     "autoprefixer": "^10.4.16",
     "postcss-mixins": "^9.0.4",
     "postcss-nested": "^6.0.1",

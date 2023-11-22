@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@samatech/postcss-colors':
-    specifier: ^0.5.1
-    version: 0.5.1(postcss@8.4.31)
+    specifier: ^0.5.2
+    version: 0.5.2(postcss@8.4.31)
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.31)
@@ -484,8 +484,8 @@ packages:
     dev: true
     optional: true
 
-  /@samatech/postcss-colors@0.5.1(postcss@8.4.31):
-    resolution: {integrity: sha512-0+D1D06BjPVNnQlQnVl+Hbey7hCNqv+usvN0bOq/z+MYGqJr5416GXY+vjGmzOwUZbHSukeizYBZL7njR+V5tQ==}
+  /@samatech/postcss-colors@0.5.2(postcss@8.4.31):
+    resolution: {integrity: sha512-nvYe9KNq52cRTwtTw34tSozWWgRuoptoqzZBAkXXjKcbgiE72PWNZouE6XeCm+Qd5bdXPgJOFSAiRujd1fLGZg==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.4.31
